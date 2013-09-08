@@ -1,10 +1,14 @@
 $(document).ready(function)() {
-  $(".boxes").on("mouseenter", function() {
-    
-    $(this).closest(".txtcenter").find("h2").slideDown;
-    $(".boxes").remove();
-    
+  $(".box").on("mouseenter", function() {
+  $(".boxes").children(".txtcenter");
   
-  });
-
- });   
+  
+  
+ });
+});
+   
+//function showBoxes() {
+//$(".main, .mainp").remove(); 
+    //$(".main").remove();
+   //$(".main").remove();
+(//this).closest(".boxes").
