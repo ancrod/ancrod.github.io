@@ -2,6 +2,7 @@ $(document).ready(function() {
   
   $(".box").on("mouseenter", function() {
     // $(this).addClass("txtcenter");
+    
     console.log("hokey", this);
   });
   
