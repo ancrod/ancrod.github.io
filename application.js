@@ -1,14 +1,12 @@
-$(document).ready(function)() {
-  $(".box").on("mouseenter", function() {
-  $(".boxes").children(".txtcenter");
-  
-  
-  
- });
-});
-   
-//function showBoxes() {
-//$(".main, .mainp").remove(); 
-    //$(".main").remove();
-   //$(".main").remove();
-(//this).closest(".boxes").
+$(document).ready(function() {
+  $("box").on("mouseenter", function() {
+   $(this).addClass("txtcenter");
+     console.log("hokey", this);
+  });   
+});       
+       $(".box").on("mouseleave", function() {
+         $(".main").append("mainp");
+           console.log("pokey", this);
+    
+  });
+ 
