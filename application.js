@@ -1,7 +1,8 @@
 $(document).ready(function() {
+  $(".box").hover(function() {
+    $(".
   
-  $(".box").on("mouseenter", function() {
-   $(".main h1").text("put the text here");
+   
     
     console.log("hokey", this);
   });
@@ -12,3 +13,5 @@ $(document).ready(function() {
   });
  
 });       
+// $(".box").on("mouseenter", function() {
+// $(".main h1").text("put the text here");
