@@ -105,6 +105,7 @@ center img {
 .main {
     text-align:center;
     color:#232323;
+    font-weight:bold;
     font-size:58px;
     padding:30px 0 0 15px;
     /* margin:1em 18%; */
@@ -116,6 +117,7 @@ center img {
 
 .mainp {
     text-align:center;
+    font-style:normal;
     font-size:20px;
     /* margin:1em 18%; */
     margin-top:18px;
@@ -148,7 +150,7 @@ center img {
     border-radius:5px;
     display:inline-block;
     background:linear-gradient(#FFF, #E8E8E8);
-    margin:15px 25px 25px;
+    margin:15px 20px 25px;
     height:240px;
     width:175px;
     text-align:center;
@@ -161,12 +163,12 @@ center img {
 
 .arrowright {
 	display:none;
-	position:relative; top:-180px; right:25px;
+	position:relative; top:-240px; right:35px;
 }
 
 .arrowleft {
 	display:none;
-	position:relative; top:-180px; left:130px;
+	position:relative; top:-240px; left:140px;
 }
 
 .box:hover  .arrowright {
@@ -184,27 +186,28 @@ center img {
     
  h3 {
     text-decoration:underline;
-    font-size:20px;
-    margin:5px:
+    font-size:23px;
+    margin:10px:
     text-align:center;
     line-height:0.3em;
+    padding:5px;
 }
     
 h4 {
     color:#ff0000;
     font-weight:bold;
-    padding:1px;
     font-size:15px;
     font-family:Verdana, 'Times New Roman', san-serif;
     text-align:center;
-    padding:5px;
-    border:2px;
-    line-height:0.3em;
+    padding:20px 0 20px 0;
+    border:5px;
+    /* line-height:0.3em; */
     }
-    
+   
 .products {
     /* outline:1px solid red; */
     text-align:center;
+    
     }
 
 
