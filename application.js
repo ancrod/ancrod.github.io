@@ -1,34 +1,23 @@
 $(document).ready(function() {
-    $(".box").on("mouseenter", function() {
-      $(".main h1").addClass("h2 p");
-      $(".main").removeClass("h1 p");
-    
-      console.log("hokey", this);
-  });
-    
-    // $(".box").on("mouseenter", function() {
-      // $(".txtcenter").find("h2").hover();
-      // $(".txt").find("p").hover();
-      // console.log("mokey", this);
-    // });
-    
-    $(".box").on("mouseleave", function() { 
-      $(".main .mainp").addClass();
-      $(".txtcenter").removeClass();
-      console.log("pokey", this);
+    $('.app').each(function (i, v) {
+
+        $(v).mouseenter(function () {
+            $('#main_splash').hide();
+            // Product splash
+            var targetSplash = $('.app_splash')[i];
+            $(targetSplash)
+              .clone()
+              .show()
+              .insertBefore('#main_splash');
+            // Arrow
+            var targetArrow = $('.arrow')[i];
+            $(targetArrow).addClass('active_arrow');
+        });
+
+        $(v).mouseleave(function () {
+            $('#splash_holder > .app_splash').remove();
+            $('#main_splash').show();
+            $('.active_arrow').removeClass('active_arrow');
+        });
     });
-  });
-  
-
- // $(".main h1").text("put the text here"); 
-  
-    // $(".main h1")
-   //$(".mainp").removeClass();  
-  // });
- //$(".boxes .bc").hide();
-// });       
-  // $(".box").on("mouseenter", function() {
- 
-
-// $(".txtcenter .bc").show();
-// $(".main").hide();
+});
