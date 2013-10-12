@@ -1,23 +1,23 @@
-$(document).ready(function() {
-    $('.app').each(function (i, v) {
-
-        $(v).mouseenter(function () {
-            $('#main_splash').hide();
-            // Product splash
-            var targetSplash = $('.app_splash')[i];
-            $(targetSplash)
-              .clone()
-              .show()
-              .insertBefore('#main_splash');
-            // Arrow
-            var targetArrow = $('.arrow')[i];
-            $(targetArrow).addClass('active_arrow');
-        });
-
-        $(v).mouseleave(function () {
-            $('#splash_holder > .app_splash').remove();
-            $('#main_splash').show();
-            $('.active_arrow').removeClass('active_arrow');
-        });
-    });
+$(document).ready(function(){
+	$('#button1').hover(function(){
+		$('#textcenter').addClass('hidden');
+		$('#hiddenheadline1').removeClass('hidden');
+	},function(){
+		$('#textcenter').removeClass('hidden');
+		$('#hiddenheadline1').addClass('hidden');
+	});
+	$('#button2').hover(function(){
+		$('#textcenter').addClass('hidden');
+		$('#hiddenheadline2').removeClass('hidden');
+	},function(){
+		$('#textcenter').removeClass('hidden');
+		$('#hiddenheadline2').addClass('hidden');
+	});
+	$('#button3').hover(function(){
+		$('#textcenter').addClass('hidden');
+		$('#hiddenheadline3').removeClass('hidden');
+	},function(){
+		$('#textcenter').removeClass('hidden')
+		$('#hiddenheadline3').addClass('hidden')
+	});
 });
