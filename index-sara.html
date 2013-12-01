@@ -3,8 +3,18 @@
 <head>
   <link type="text/css" rel="stylesheet" href="sara.css"/>
   <title>Sara & Katie's Web Search Tool</title>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> 
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> 
   <script src="application.js"></script>
+    <!-- Put the following javascript before the closing  tag. -->
+  <script>
+    (function() {
+    var cx = '123:456'; // Insert your own Custom Search engine ID here
+    var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true;
+    gcse.src = (document.location.protocol == 'https' ? 'https:' : 'http:') +
+      '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s);
+})();
+  </script>
 </head>
 <body>
   
@@ -31,6 +41,13 @@
     </ul>  
   </div>  
 
+ 
+  <div> 
+  <!-- Place this tag where you want both of the search box and the search results to render -->
+    <gcse:search>
+
+    </gcse:search>
+  </div>
 </body>
 </html> 
   
