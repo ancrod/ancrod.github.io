@@ -1,0 +1,21 @@
+﻿
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	deleted:    application.js
+#	new file:   index-sara.html
+#	deleted:    index.html
+#	deleted:    main.css
+#	new file:   sara-application.js
+#	new file:   sara.css
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	ancrod.sara.github.io/
+#	michaelabbey.github.io/
+#	new  3.txt
+
